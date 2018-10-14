@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <country-suggest />
+        <country-suggest v-model="country" />
     </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'app',
   components: {
     CountrySuggest,
+  },
+  data() {
+    return {
+      country: '',
+    };
   },
 };
 </script>
